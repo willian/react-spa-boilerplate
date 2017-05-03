@@ -1,0 +1,15 @@
+default: &default
+  enabled: true
+  host: 0.0.0.0
+  port: 8080
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  enabled: false
+
+production:
+  <<: *default
+  enabled: false

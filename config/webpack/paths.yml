@@ -1,0 +1,28 @@
+default: &default
+  config: config/webpack
+  entry: entries
+  output: public
+  manifest: manifest.json
+  node_modules: node_modules
+  source: src
+  extensions:
+    - .js
+    - .jsx
+    - .sass
+    - .scss
+    - .css
+    - .png
+    - .svg
+    - .gif
+    - .jpeg
+    - .jpg
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  manifest: manifest-test.json
+
+production:
+  <<: *default

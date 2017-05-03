@@ -1,0 +1,7 @@
+*.log
+*.swp
+.DS_STORE
+.env
+coverage
+node_modules
+public
